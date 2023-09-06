@@ -1,23 +1,23 @@
 const express = require ('express')
 const cors = require ('cors')
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 const app= express()
 
-var corOptions = {
-    origin: 'http://localhost:8081'
-}
+// var corOptions = {
+//     origin: 'http://localhost:8081'
+// }
 
 
 //middlewares
 
-app.use(cors(corOptions));
+// app.use(cors(corOptions));
 
 app.use(express.json());
 
 app.use(express.urlencoded({extend:true}));
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 //router links
 const router = require ('./routes/productRouter.js')
