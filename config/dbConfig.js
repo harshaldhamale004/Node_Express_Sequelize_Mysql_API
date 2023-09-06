@@ -1,9 +1,9 @@
 module.exports= {
-    HOST: 'localhost',
-    USER: 'root',
-    PASSWORD: '',
-    DB: 'node_sequelize_api_db',
-    dialect: 'mysql',
+    HOST: 'ecommerce-webapp-server.database.windows.net',
+    USER: 'ecommerce-webapp-server',
+    PASSWORD: 'Mssql@123',
+    DB: 'EcommerceWebappDB',
+    dialect: 'mssql',
 
     pool: {
         max: 5,
